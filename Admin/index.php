@@ -6,6 +6,13 @@ a
   text-decoration: none;
 
 }
+#loading
+{
+  width: 100%;
+  height: 100vh;
+  background: #fff url('Dual Ball-1s-200px.gif') no-repeat center;
+  z-index: 99999;
+}
 </style>
 
 <?php
@@ -46,7 +53,10 @@ $ad=mysqli_fetch_array($q)
     <link rel="stylesheet" href="styles.css" />
     <title>Admin Dashboard</title>
   </head>
-  <body id="body">
+  <body id="body" onload="preloader()">
+    <div id="loading" >
+
+    </div>
     <div class="container">
       <nav class="navbar">
         <div class="nav_icon" onclick="toggleSidebar()">
@@ -263,7 +273,15 @@ $ad=mysqli_fetch_array($q)
   </div>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="script.js"></script>
+    <script>
+      var pre=document.getElementById('loading');
+      function preloader() {
+        pre.style.display='none';
+       // $('#preloader').delay(3000).fadeOut();
+      }
+    </script>
   </body>
+  
 
 </html>
 

@@ -35,7 +35,7 @@ $col=mysqli_fetch_array($s);
   <div class="card-body" style="padding:0px;">  
 
   <div class="table-responsive">  
-  <form method="post">        
+          
   <table class="table table-bordered  ">
     <thead>
       <tr>
@@ -71,20 +71,7 @@ $col=mysqli_fetch_array($s);
 
 <br>
 
-    
 
-   
-
-  </a>
-    </div>
-</div>
-</div>
-</form>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 </body>
 

@@ -243,7 +243,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  </head>
 <body>
-<!--  Request me for a signup form or any type of help  -->
+
 
   
 
@@ -260,38 +260,24 @@
                     <li></li>
                     <li></li>
 
-                    <div class="login-form">    
-    <form>
-    <div class="avatar"><i class="material-icons">&#xE7FF;</i></div>
-      <h4 class="modal-title">Login As Account</h4>
+              <div class="login-form">    
+              <form>
+              <div class="avatar"><i class="material-icons">&#xE7FF;</i></div>
+              <h4 class="modal-title">Login As Account</h4>
+              <br>
 
+               <a href="http://localhost/AplusWeb/Student/StudentLoginHere.php"  class="btn btn-primary btn-block btn-lg">Student</a>
 
-    
+              <br>
 
-      <br>
-
-       <a href="http://localhost/AplusWeb/Student/StudentLoginHere.php"  class="btn btn-primary btn-block btn-lg">Student</a>
-
-       <br>
-
-        <a href="http://localhost/AplusWeb/Teacher/TeacherLogin.php"  class="btn btn-primary btn-block btn-lg">Teacher</a>
-
-        <br>
-        <br>
-
-       
-       
-      <h4 align="center" style="font-size: 15px;">Welcome To Aplus Tuition Classes</h4>
-      
-                  
-    </form>     
-    
+              <a href="http://localhost/AplusWeb/Teacher/TeacherLogin.php"  class="btn btn-primary btn-block btn-lg">Teacher</a>
+              <br>
+              <br>
+              <h4 align="center" style="font-size: 15px;">Welcome To Aplus Tuition Classes</h4>
+          </form>
+      </div>
+  </ul>
 </div>
-            </ul>
-
-            
-
-    </div >
 
 
 </body>

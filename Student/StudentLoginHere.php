@@ -1,3 +1,4 @@
+<?php include('connection.php');?>
 <?php
 session_start();
 ?>
@@ -123,18 +124,15 @@ img.avatar
 
 
 
-
 if(isset($_POST['stlogin']))
 {
  
- 
-
  $em=$_POST['emg'];
  $ps=$_POST['psw'];
 
- $con=mysqli_connect("localhost","root","","aplusweb");
 
-   $isValid = filter_var($em, FILTER_VALIDATE_EMAIL);
+
+  $isValid = filter_var($em, FILTER_VALIDATE_EMAIL);
 
  if($isValid)
  {
@@ -145,7 +143,7 @@ if(isset($_POST['stlogin']))
  }
 
 
-$query = mysqli_query($con,"SELECT Email,Password
+ $query = mysqli_query($con,"SELECT Email,Password
     FROM studentninedata
     WHERE Email='$em' AND Password='$ps' 
     UNION 
@@ -153,15 +151,10 @@ $query = mysqli_query($con,"SELECT Email,Password
     FROM studentendata 
     WHERE Email='$em' AND Password='$ps'");
 
-
-
-// $nine=mysqli_query($con,"select * from studentninedata where Email='$em' and Password='$ps'");
-//   $ten=mysqli_query($con,"select * from studentendata where Email='$em' and Password='$ps'");
-
  
 
 
-  if($ok=mysqli_fetch_array($query))
+  if($valid=mysqli_fetch_array($query))
 
 
      {

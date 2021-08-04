@@ -8,22 +8,10 @@ if(isset($_SESSION['emg']))
 
   
    $Mail=$_SESSION['emg'];
-   //echo $Mail;
- 
-
-
+   $s=mysqli_query($con,"select * from teacherdata");
    
 ?>
 
-<?php
-
-
-
-$s=mysqli_query($con,"select * from teacherdata");
-
-
-
-?>
 
 
  
@@ -61,7 +49,7 @@ $s=mysqli_query($con,"select * from teacherdata");
   <form method="post">        
   <table class="table">
     <thead>
-      <tr class="">
+      <tr>
       
         <th>USER</th>
         <th>NAME</th>

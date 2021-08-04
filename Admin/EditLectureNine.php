@@ -108,7 +108,7 @@ if (isset($_POST['dn']))
  
  
 
-   $up=mysqli_query($con,"UPDATE lecturenine SET Time_Lec='$Le', Monday = '$Mo', Tuesday = '$Tu', Wednesday='$We',Thursday = '$Th',Friaday='$Fi',Saturday='$Sa' WHERE Lno = '$id'");
+   $up=mysqli_query($con,"UPDATE lecturenine SET Time_Lec='$Le', Monday = '$Mo', Tuesday = '$Tu', Wednesday='$We',Thursday = '$Th',Friaday='$Fi',Saturday='$Sa' WHERE id = '$id'");
 
    if($up)
    {

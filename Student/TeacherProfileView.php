@@ -8,9 +8,6 @@ if(isset($_SESSION['emg']))
 
   
    $Mail=$_SESSION['emg'];
-   //echo $Mail;
- 
-
 
    
 ?>

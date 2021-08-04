@@ -55,7 +55,7 @@ if(isset($_SESSION['ema']))
       <h2>For Personal Data </h2>
 
       <label for="rollno">RollNo</label>
-      <input type="number" class="form-control"  placeholder="Set RollNo" name="rn" readonly="">
+      <input type="number" class="form-control"  placeholder="Set RollNo" name="rn" required="">
 
       <label for="name">Name:</label>
       <input type="text" class="form-control"  placeholder="Enter Name " name="nm1" required="">
@@ -123,6 +123,10 @@ if (isset($_POST['dn']))
   $paid=$_POST['pd'];
   $rem=$_POST['rm'];
   $tot=$_POST['Top'];
+
+  if($rn==0 && $nm==0){
+    echo"<script>alert('Blanck Record Not Allowed')</script>";
+  }
 
 
 

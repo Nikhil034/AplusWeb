@@ -9,25 +9,16 @@ if(isset($_SESSION['emg']))
 
    $Mail=$_SESSION['emg'];
    //echo $Mail;
+   $s=mysqli_query($con,"select * from lecturenine WHERE id BETWEEN 1 AND 2");
  
 
 
    
 ?>
-<?php
 
 
 
-$s=mysqli_query($con,"select * from lecturenine WHERE id BETWEEN 1 AND 2");
-
-
-
-?>
-
-
-
-
-<!doctype html> 
+<!Doctype html> 
 <html lang="en">
 <head>
   <meta charset="utf-8">

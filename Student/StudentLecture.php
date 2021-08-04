@@ -18,15 +18,7 @@ if(isset($_SESSION['emg']))
 <html lang="en">
 <head>
   <style type="text/css">
-    img.avatar 
-  {
-  width: 50%;
-  border-radius: 350%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 
-}
 body
 {
   background-color: 

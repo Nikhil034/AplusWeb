@@ -11,12 +11,13 @@ if(isset($_SESSION['emg']))
    echo $Mail."<br>";
 
    $std9=mysqli_query($con,"select Standard from studentninedata where Email='$Mail'");
+   $std10=mysqli_query($con,"select Standard from studentendata where Email='$Mail'");
 
    $rno9=mysqli_query($con,"select RollNo from studentninedata where Email='$Mail'");
    $rno10=mysqli_query($con,"select Rollno from studentendata where Email='$Mail'");
 
 
-   $std10=mysqli_query($con,"select Standard from studentendata where Email='$Mail'");
+  
 
    while($no=$rno9->fetch_assoc())
    {
@@ -36,9 +37,9 @@ if(isset($_SESSION['emg']))
     echo $data9;
    }
 
-  while($cat=$std10->fetch_assoc())
+  while($catch2=$std10->fetch_assoc())
   {
-    echo $cat['Standard']."<br>";
+    echo $catch2['Standard']."<br>";
   }
 
 

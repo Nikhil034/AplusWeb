@@ -8,14 +8,14 @@ if(isset($_SESSION['emg']))
 
   
    $Mail=$_SESSION['emg'];
-   $id=mysqli_query($con,"select RollNo from studentninedata where Email='$Mail'");
-   $ok=mysqli_query($con,"select Rollno from studentendata where Email='$Mail'");
-   while ($row2 = $id->fetch_assoc())
+   $id9=mysqli_query($con,"select RollNo from studentninedata where Email='$Mail'");
+   $id10=mysqli_query($con,"select Rollno from studentendata where Email='$Mail'");
+   while ($row2 = $id9->fetch_assoc())
     {
     //echo $row2['RollNo']."<br>";
    }
   
-    while ($row3 = $ok->fetch_assoc())
+    while ($row3 = $id10->fetch_assoc())
     {
     echo $row3['Rollno']."<br>";
    }
@@ -37,6 +37,13 @@ $qu2=mysqli_query($con,"select * from studentendata where Email='$Mail'");
   {
     text-decoration: none;
   }
+  #loading
+{
+  width: 100%;
+  height: 100vh;
+  background: #fff url('Dual Ball-1s-200px.gif') no-repeat center;
+  z-index: 99999;
+}
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,7 +59,9 @@ $qu2=mysqli_query($con,"select * from studentendata where Email='$Mail'");
     <link rel="stylesheet" href="styles.css" />
     <title>Student Dashboard</title>
   </head>
-  <body id="body">
+  <body id="body" onload="preloader()">
+    <div id="loading">
+    </div>
     <div class="container">
       <nav class="navbar">
         <div class="nav_icon" onclick="toggleSidebar()">
@@ -295,6 +304,13 @@ $qu2=mysqli_query($con,"select * from studentendata where Email='$Mail'");
     </div>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="script.js"></script>
+      <script>
+      var pre=document.getElementById('loading');
+      function preloader() {
+        pre.style.display='none';
+       // $('#preloader').delay(3000).fadeOut();
+      }
+    </script>
   </body>
 </html>
 <?php 

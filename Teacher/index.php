@@ -28,6 +28,17 @@ a
   text-decoration: none;
 
 }
+.responsive {
+  width: 100%;
+  height: auto;
+}
+ #loading
+{
+  width: 100%;
+  height: 100vh;
+  background: #fff url('Dual Ball-1s-200px.gif') no-repeat center;
+  z-index: 99999;
+}
 
 
 
@@ -52,7 +63,9 @@ a
 
     <title>Teacher Dashboard</title>
   </head>
-  <body id="body">
+  <body id="body" onload="preloader()">
+    <div id="loading">
+    </div>
     <div class="container">
       <nav class="navbar">
         <div class="nav_icon" onclick="toggleSidebar()">
@@ -66,13 +79,16 @@ a
           <!-- MAIN TITLE STARTS HERE -->
 
           <div class="main__title">
+            <img src="assets/presentation.png" alt="" />
             <?php
              while($te=mysqli_fetch_array($s))
              {
             ?>  
           
             <div class="main__greeting">
-              <h1>Hello,<?php echo $te['Name'];?></h1>
+              <h1>Hello,<?php echo $te['Name'];?>
+                
+              </h1>
               <?php 
                 }
                 ?>
@@ -299,6 +315,13 @@ a
     </div>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="script.js"></script>
+     <script>
+      var pre=document.getElementById('loading');
+      function preloader() {
+        pre.style.display='none';
+       // $('#preloader').delay(3000).fadeOut();
+      }
+    </script>
   </body>
 </html>
  <?php 

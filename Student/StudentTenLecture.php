@@ -9,19 +9,13 @@ if(isset($_SESSION['emg']))
  
    $Mail=$_SESSION['emg'];
   // echo $Mail;
+    $s=mysqli_query($con,"select * from lectureten WHERE id BETWEEN 1 AND 2");
+
+    $q=mysqli_query($con,"select *  from lectureten WHERE id BETWEEN 3 AND 4" );
  
 
 
    
-?>
-<?php
-
-
-
-$s=mysqli_query($con,"select * from lectureten WHERE id BETWEEN 1 AND 2");
-
-$q=mysqli_query($con,"select *  from lectureten WHERE id BETWEEN 3 AND 4" );
-
 ?>
 
 
