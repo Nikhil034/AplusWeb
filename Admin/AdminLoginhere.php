@@ -140,7 +140,8 @@ if(isset($_POST['adlogin']))
 
  $em=$_POST['ema'];
  $ps=$_POST['psw'];
-
+$eml = mysqli_real_escape_string($con,$em);
+$psw = mysqli_real_escape_string($con,$ps);
  $isValid = filter_var($em, FILTER_VALIDATE_EMAIL);
 
  if($isValid)
@@ -151,19 +152,15 @@ if(isset($_POST['adlogin']))
   echo "Plese Input A Valid Email";
  }
 
-
-
-
-
-
- $sq=mysqli_query($con,"select * from admindata where Email='$em' and Code='$ps'");
+ $sq=mysqli_query($con,"select * from admindata where Email='$eml' and Code='$psw'");
 
  
 
 if($ok=mysqli_fetch_array($sq))
      {
 
-      $_SESSION['ema']=$em;
+
+      $_SESSION['ema']=$eml;
       
       header("location:http://localhost/AplusWeb/Admin/index.php");
      }

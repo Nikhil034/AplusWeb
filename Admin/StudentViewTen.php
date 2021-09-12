@@ -57,6 +57,13 @@ $col=mysqli_fetch_array($s);
 <body>
 
 <div class="container">
+   <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a href="tendata.php">10th Class</a></li>
+    <li class="breadcrumb-item active" aria-current="page">View Student</li>
+  </ol>
+</nav>
   <div class="card" style="margin-top: 2px;">
     <div class="card header">
   <h2>Student 10th Data</h2>

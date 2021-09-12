@@ -34,6 +34,14 @@ $col=mysqli_fetch_array($sq);
 
   <form action="" method="post">
     <div class="form-group">
+        <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a href="tendata.php">10th Class</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Edit Student</li>
+  </ol>
+</nav>
+
 
       
 

@@ -39,6 +39,13 @@ $s=mysqli_query($con,"select * from teacherdata");
 	<br>
  
 <div class="container">
+
+   <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Teacher</li>
+  </ol>
+</nav>
  
   <div class="card">
     <div class="card-header">
@@ -68,6 +75,8 @@ $s=mysqli_query($con,"select * from teacherdata");
 
     while($r=mysqli_fetch_array($s))
   {
+    if($r['isDeleted']==0)
+    {
 
    ?>
 
@@ -90,6 +99,7 @@ $s=mysqli_query($con,"select * from teacherdata");
 
 
 <?php
+}
 }
 ?>
 

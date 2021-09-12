@@ -124,6 +124,7 @@ $(document).ready(function()
     $transfer=mysqli_query($con,"insert into testingtb(Rollno,Name,Email,Password,Phoneno,Standard,Sex,Address)select RollNo,Name,Email,Password,Phone,Standard,Sex,Address from studentninedata");
 
     $up=mysqli_query($con,"UPDATE testingtb SET Standard = '10'");
+    $st=mysqli_query($con,"UPDATE testingtb SET Status='1'");
 
     if($transfer)
 {
@@ -168,14 +169,19 @@ else
 
        <?php
 
+
     while($r=mysqli_fetch_array($s))
   {
-
+    if($r['isDeleted']==0)
+    {
+    
    ?>
 
     <tr>
    <td><?php echo $r['RollNo'];?></td> 
     <td><?php echo $r['Name'];?></td>  
+   
+
       <td><a href="StudentView.php?i=<?php echo $r['RollNo'];?>" class="btn btn-primary">
         
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -184,11 +190,14 @@ else
     </svg>
 
       </a></td>
+      
     
 
     </tr>
     <?php
 }
+}
+
 ?>
 
   </a>

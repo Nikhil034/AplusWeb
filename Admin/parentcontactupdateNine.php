@@ -37,6 +37,13 @@ $col=mysqli_fetch_array($sq);
   <br>
  
 <div class="container">
+   <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a href="parentsDataNine.php">9th Data</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Edit Data</li>
+  </ol>
+</nav>
  
   <div class="card">
     <div class="card-header">Update Contact Details</div>

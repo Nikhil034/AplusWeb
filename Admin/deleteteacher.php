@@ -16,7 +16,7 @@ if(isset($_SESSION['ema']))
   $id=$_GET['i'];
 
 
-mysqli_query($con,"delete from teacherdata where User_id=$id");
+mysqli_query($con,"update teacherdata set isDeleted='1' where User_id=$id");
 
 
 header("location:teacherdata.php");

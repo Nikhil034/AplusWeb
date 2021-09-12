@@ -43,6 +43,14 @@ $s=mysqli_query($con,"select Distinct Rollno,Name,Mark from resultnine where Dat
   <br>
  
 <div class="container">
+    <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a href="ExamResultManage.php">Exam & Result</a></li>
+     <li class="breadcrumb-item"><a href="Resultnine.php">9th Result</a></li>
+    <li class="breadcrumb-item active" aria-current="page">View Result</li>
+  </ol>
+</nav>
 
   <div class="card">
     <form action="">

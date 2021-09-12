@@ -34,8 +34,16 @@ $col=mysqli_fetch_array($sq);
 
   <br>
 <div class="container">
+
   
   <div class="card">
+       <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a href="SetTimeTableNine.php">Time Table</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Edit Table</li>
+  </ol>
+</nav>
     <div class="card-header">
        Update Table
     </div>

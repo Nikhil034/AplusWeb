@@ -16,7 +16,7 @@ if(isset($_SESSION['ema']))
   $id=$_GET['i'];
 
 
-mysqli_query($con,"delete from studentninedata where RollNo=$id");
+mysqli_query($con,"update studentninedata set isDeleted='1' where RollNo=$id");
 
 
 header("location:ninedata1.php");

@@ -47,6 +47,13 @@ $s=mysqli_query($con,"select * from feesactivity");
 <body>
  <br>
 <div class="container">
+  <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a href="feesmanage.php">Fees Manage </a></li>
+    <li class="breadcrumb-item active" aria-current="page">Show Fees</li>
+  </ol>
+</nav>
   <div class="card">
     <div class="card-header">Student 9th Fees Details</div>
     <div class="card-body">

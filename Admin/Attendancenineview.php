@@ -23,11 +23,21 @@ if(isset($_SESSION['ema']))
 </head>
 <body>
 	<br>
+	<br>
  
 <div class="container">
+
+	<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a href="TakeAttendance.php">Attendance</a></li>
+    <li class="breadcrumb-item"><a href="AttendanceNine.php">9th Class</a></li>
+    <li class="breadcrumb-item active" aria-current="page">View</li>
+  </ol>
+</nav>
   
   <div class="card">
-    <div class="card-header"><h3>View Attendance</h3></div>
+    <div class="card-header" align="center"><h4>View Attendance</h4></div>
     <div class="card-body" style="padding: 0px;">
     	<form method="post">       
   					<table class="table table-hover">

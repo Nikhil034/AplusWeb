@@ -42,6 +42,13 @@ function myFunction() {
 
 <div class="container">
   <div class="card" style="margin-top: 2px;">
+     <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a href="ninedata1.php">9th Class</a></li>
+    <li class="breadcrumb-item active" aria-current="page">View Student</li>
+  </ol>
+</nav>
     
     <div class="card header">
   <h2>Student 9th Data</h2>
@@ -91,6 +98,10 @@ function myFunction() {
         <th>STATUS</th>
         <td><?php echo $col[10];?></td>
       </tr>  
+      <tr>
+        <th>IsDeleted</th>
+        <td><?php echo $col[11];?></td>
+      </tr>
                 
 
     </thead>

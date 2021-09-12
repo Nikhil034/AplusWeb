@@ -30,6 +30,14 @@ $col=mysqli_fetch_array($s);
   <br>
 
 <div class="container">
+   <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a href="feesmanage.php">Fees Manage </a></li>
+     <li class="breadcrumb-item"><a href="ninefeesdata.php">9th Fees </a></li>
+    <li class="breadcrumb-item active" aria-current="page">Edit Fees</li>
+  </ol>
+</nav>
   <div class="card" style="margin-top: 2px;">
     
     <div class="card header">

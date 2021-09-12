@@ -53,7 +53,7 @@ $ad=mysqli_fetch_array($q)
     <link rel="stylesheet" href="styles.css" />
     <title>Admin Dashboard</title>
   </head>
-  <body id="body" onload="preloader()">
+  <body id="body" onload="setTimeout('preloader()',250);">
     <div id="loading" >
 
     </div>
@@ -67,7 +67,8 @@ $ad=mysqli_fetch_array($q)
         </div>
 
 
-        <h4>Hello,  <?php echo $ad['Name'];?></h4>
+       <!--  <h4>Hello,  <?php echo $ad['Name'];?></h4> -->
+       <h4>Hello,Admin</h4>
       
       </nav>
 

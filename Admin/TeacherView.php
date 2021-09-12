@@ -48,6 +48,13 @@ $col=mysqli_fetch_array($s);
 <body>
 
 <div class="container">
+   <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+      <li class="breadcrumb-item"><a href="teacherdata.php">Teacher</a></li>
+    <li class="breadcrumb-item active" aria-current="page">View</li>
+  </ol>
+</nav>
   <div class="card" style="margin-top: 2px;">
     <div class="card header">
   <h2>Teacher Data</h2>

@@ -26,6 +26,13 @@ if(isset($_SESSION['ema']))
 <body>
 
 <div class="container">
+    <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a href="teacherdata.php">Teacher</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Add</li>
+  </ol>
+</nav>
  
   <form action="" method="post">
     <div class="form-group">

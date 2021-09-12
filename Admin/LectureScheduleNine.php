@@ -50,10 +50,16 @@ $s=mysqli_query($con,"select * from lecturenine WHERE id BETWEEN 1 AND 2");
 
 
 
-
+ <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">9th Lecture</li>
+  </ol>
+</nav>
 
  
 <div id="tabs">
+
   <ul>
     <li><a href="#tabs-1">AfterNoon Batch</a></li>
  

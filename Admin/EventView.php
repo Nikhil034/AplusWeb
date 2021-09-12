@@ -36,6 +36,14 @@ $col=mysqli_fetch_array($s);
   <br>  
 
 <div class="container">
+    <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a href="EventManage.php">Event View</a></li>
+    <li class="breadcrumb-item active" aria-current="page">View Event</li>
+  </ol>
+</nav>
+
   <div class="card" style="margin-top: 2px;">
     <div class="card header">
 

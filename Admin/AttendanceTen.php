@@ -19,11 +19,19 @@ if(isset($_SESSION['ema']))
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+	<br><br>
 
 	<div class="container" style="margin-top: 1px;">
+			<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a href="TakeAttendance.php">Attendance</a></li>
+    <li class="breadcrumb-item active" aria-current="page">10th Class</li>
+  </ol>
+</nav>
 		<div class="panel panel-default">
 		<div class="panel-heading">
-			<h1 style="text-align: center;">Take Attendance</h1>
+			<h4 style="text-align: center;">Take Attendance</h4>
 		</div>
 		<div class="panel-body">
 		
@@ -51,7 +59,7 @@ if(isset($_SESSION['ema']))
 							<td><?php echo $show['Rollno']; ?></td>
 							<td><?php echo $show['Name']; ?></td>
 							<td>
-								P <input required type="radio" name="at[<?php echo $show['Rollno']; ?>]" value="Present">
+								P <input required type="radio" name="at[<?php echo $show['Rollno']; ?>]" value="Present" checked>
 								A <input required type="radio" name="at[<?php echo $show['Rollno']; ?>]" value="Absent">
 							</td>
 						</tr>

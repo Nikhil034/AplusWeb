@@ -21,8 +21,16 @@ if(isset($_SESSION['ema']))
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+  <br>
 
 <div class="container">
+   <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a href="homeworkManage.php">HomeWork</a></li>
+    <li class="breadcrumb-item active" aria-current="page">9th Howework</li>
+  </ol>
+</nav>
  
   <form action="" method="post">
     <div class="form-group">

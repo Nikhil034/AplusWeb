@@ -23,6 +23,13 @@ if(isset($_SESSION['ema']))
 <body>
 
 <div class="container">
+   <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a href="tendata.php">10th Class</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Add Student</li>
+  </ol>
+</nav>
  
   <form action="" method="post" autocomplete="off">
     <div class="form-group">

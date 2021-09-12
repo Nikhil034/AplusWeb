@@ -121,6 +121,14 @@ $s=mysqli_query($con,"select * from sethomeworkten");
 
 
   <div class="card">
+      <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a href="homeworkManage.php">HomeWork</a></li>
+    <li class="breadcrumb-item"><a href="homeworktenSet.php">10th HomeWork</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Search Howework</li>
+  </ol>
+</nav>
   <h3 class="card-header">Enter Subject To Show HomeWork
   </h3>
   

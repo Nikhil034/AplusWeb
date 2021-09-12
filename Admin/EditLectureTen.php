@@ -33,6 +33,13 @@ $col=mysqli_fetch_array($sq);
 <body>
 
 <div class="container">
+    <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a href="LectureScheduleTen.php">10th Lectures</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Edit Lecture</li>
+  </ol>
+</nav>
 
  
     <div class="form-group">

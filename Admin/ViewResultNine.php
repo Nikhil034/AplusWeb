@@ -30,8 +30,17 @@ $col=mysqli_fetch_array($s);
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+  <br>
 
 <div class="container">
+   <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+    <li class="breadcrumb-item"><a href="ExamResultManage.php">Exam & Result</a></li>
+     <li class="breadcrumb-item"><a href="Resultnine.php">9th Result</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Edit Result</li>
+  </ol>
+</nav>
   <div class="card" style="margin-top: 2px;">
     
     <div class="card header">

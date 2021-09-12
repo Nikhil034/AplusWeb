@@ -129,6 +129,8 @@ $(document).ready(function()
 
     while($r=mysqli_fetch_array($s))
   {
+    if($r['isDeleted']==0)
+    {
 
    ?>
 
@@ -151,6 +153,7 @@ $(document).ready(function()
  -->
     </tr>
     <?php
+}
 }
 ?>
 </tbody>
