@@ -27,7 +27,7 @@ $s=mysqli_query($con,"select * from teacherdata");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Teacher Data</title>
+  <title>Teacher Profile</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -47,7 +47,7 @@ $s=mysqli_query($con,"select * from teacherdata");
   <div class="card">
     <div class="card-header">
     	
-       Teacher Data Here
+       Teacher Details
     </div>
 
 

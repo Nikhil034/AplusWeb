@@ -109,12 +109,11 @@ $s=mysqli_query($con,"select * from feesactivityten");
 
 else
 {
-  echo "Plese Login Page";
+  header("location:TeacherLogin.php");
 ?>
 
 
 
- <a href="TeacherLogin.php" >Login First</a>
 <?php
 }
 ?> 

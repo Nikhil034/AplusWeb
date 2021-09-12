@@ -19,7 +19,7 @@ if(isset($_SESSION['eml']))
 
 $id=$_GET['i'];
 
-$s=mysqli_query($con,"select * from showevent where Date='$id'");
+$s=mysqli_query($con,"select * from showevent where DateE='$id'");
 $col=mysqli_fetch_array($s);
 
 

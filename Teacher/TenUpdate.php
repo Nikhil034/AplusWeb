@@ -22,7 +22,7 @@ $col=mysqli_fetch_array($sq);
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Add New Student</title>
+  <title>Update Student Details</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -131,12 +131,12 @@ if (isset($_POST['dn']))
 
 else
 {
-  echo "Plese Login Page";
+   header("location:TeacherLogin.php");
 ?>
 
 
 
- <a href="TeacherLogin.php" >Login First</a>
+
 <?php
 }
 ?> 

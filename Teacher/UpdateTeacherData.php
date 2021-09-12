@@ -43,7 +43,7 @@ $col=mysqli_fetch_array($sq);
       <h2>Update Personal Data </h2>
 
       <label for="rollno">ID</label>
-      <input type="text" class="form-control"  placeholder="Set ID" name="ui"   value="<?php echo $col[0];?>">
+      <input type="text" class="form-control"  placeholder="Set ID" name="ui"   value="<?php echo $col[0];?>" readonly="">
 
       <label for="name">Name:</label>
       <input type="text" class="form-control"  placeholder="Enter Name Again" name="nm1" value="<?php echo $col[1];?>">
@@ -60,8 +60,7 @@ $col=mysqli_fetch_array($sq);
       <label for="subject">SUBJECT</label>
       <input type="text" class="form-control"  placeholder="Enter Subject" name="sb" value="<?php echo $col[5];?>">
 
-      <label for="Salary">SALARY</label>
-      <input type="text" class="form-control bg-danger" id="email" placeholder="Enter Salary" name="sl" value="<?php echo $col[6];?>">
+      
 
         <label for="phoneno">PHONE</label>
       <input type="text" class="form-control bg-danger" id="email" placeholder="Enter Phone" name="pn" value="<?php echo $col[7];?>">
@@ -78,7 +77,7 @@ $col=mysqli_fetch_array($sq);
 
    <input type="submit" class="btn btn-success" value="Done" name="dn">
 
-     <input type="reset" class="btn btn-danger text white" value="Cancel"  formaction="StudentViewTen.php">
+
 
 
 
@@ -101,14 +100,13 @@ if (isset($_POST['dn']))
   $ps=$_POST['pw'];
   $age=$_POST['ag'];
   $sb=$_POST['sb'];
-  $sal=$_POST['sl'];
   $pn=$_POST['pn'];
   $add=$_POST['ad'];
 
 
  
 
-   $up=mysqli_query($con,"UPDATE teacherdata SET Name='$nm', Email = '$em', Password = '$ps', Age='$age',Subject = '$sb',Salary='$sal',Phoneno='$pn',Address='$add' WHERE User_id = '$rn'");
+   $up=mysqli_query($con,"UPDATE teacherdata SET Name='$nm', Email = '$em', Password = '$ps', Age='$age',Subject = '$sb',Phoneno='$pn',Address='$add' WHERE User_id = '$rn'");
 
    if($up)
    {
@@ -135,12 +133,12 @@ if (isset($_POST['dn']))
 
 else
 {
-  echo "Plese Login Page";
+  header("location:TeacherLogin.php");
 ?>
 
 
 
- <a href="TeacherLogin.php" >Login First</a>
+ 
 <?php
 }
 ?> 

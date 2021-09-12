@@ -123,9 +123,12 @@ if(isset($_POST['login']))
 
  $con=mysqli_connect("localhost","root","","aplusweb");
 
+ $emlte=mysqli_real_escape_string($em);
+ $pste=mysqli_real_escape_string($ps);
+
    $isValid = filter_var($em, FILTER_VALIDATE_EMAIL);
 
- if($isValid)
+ if(!$isValid)
  {
   echo "Valid Email";
  }
@@ -138,14 +141,14 @@ if(isset($_POST['login']))
 
 
 
- $sq=mysqli_query($con,"select * from teacherdata where Email='$em' and Password='$ps'");
+ $sq=mysqli_query($con,"select * from teacherdata where Email='$emlte' and Password='$emlte'");
 
  
 
 if($ok=mysqli_fetch_array($sq))
      {
 
-      $_SESSION['eml']=$em;
+      $_SESSION['eml']=$eml;
 
       
       

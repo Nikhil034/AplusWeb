@@ -36,17 +36,17 @@ if(isset($_SESSION['eml']))
     <div class="card-body">
 
 
-        <input class="form-control" type="texr" placeholder="Enter Sno" name="subn">
+        <input class="form-control" type="texr" placeholder="Enter Sno" name="subn" required="">
       <br>
 
-      <input class="form-control" type="text" placeholder="Enter  Subject" name="s">
+      <input class="form-control" type="text" placeholder="Enter  Subject" name="s" required="">
       <br>
 
-      <input class="form-control" type="date" placeholder="Choose Exam Date" name="ed">
+      <input class="form-control" type="date" placeholder="Choose Exam Date" name="ed" required="">
       <br>
 
 
-      <input class="form-control" type="text" placeholder="Enter Total Marks of Subject" name="Ttm">
+      <input class="form-control" type="text" placeholder="Enter Total Marks of Subject" name="Ttm" required="">
 
     
 

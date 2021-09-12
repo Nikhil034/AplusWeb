@@ -1,9 +1,14 @@
 <?php
+
 session_start();
-if(empty($_SESSION["eml"]) || empty($_SESSION["pass"]))
-{ 
-  header("location:");
-}
+
+
+if(isset($_SESSION['eml']))
+{
+
+  //echo $_SESSION['eml']; 
+  $mail=$_SESSION['eml']; 
+
 ?>
 
 <?php include('connection.php');?>
@@ -199,18 +204,7 @@ else
 
 </table>
 
-<!--     <div class="container">
-    <a href="updateteacher.php?i=<?php echo $col['User_id'];?>"><button type="button" class="btn btn-info btn-lg btn-block responsive-width">
-        UPDATE
-    </button>
-
-    <br>
-
-    <a href="deleteteacher.php?i=<?php echo $col['User_id'];?>"><button type="button" class="btn btn-danger btn-lg btn-block responsive-width">
-        DELETE
-    </button>
-
-  </a> -->
+  s
     </div>
 </div>
 </div>
@@ -225,3 +219,19 @@ else
 </body>
 
 </html>
+<?php 
+
+}
+
+else
+{
+
+  header("location:TeacherLogin.php");
+?>
+
+
+
+<?php
+}
+?> 
+

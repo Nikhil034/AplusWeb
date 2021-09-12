@@ -15,7 +15,7 @@ if(isset($_SESSION['eml']))
 
 
 
-$s=mysqli_query($con,"select DISTINCT Title,Description,Date from showevent");
+$s=mysqli_query($con,"select DISTINCT Title,Description,DateE from showevent");
 
 
 
@@ -66,9 +66,9 @@ $s=mysqli_query($con,"select DISTINCT Title,Description,Date from showevent");
    ?>
 
    <tr>
-     <td><?php echo $r['Date'];?></td>
+     <td><?php echo $r['DateE'];?></td>
      <td>
-       <a href="EventView.php?i=<?php echo $r['Date'];?>" class="btn btn-primary">
+       <a href="EventView.php?i=<?php echo $r['DateE'];?>" class="btn btn-primary">
          
          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
   <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>

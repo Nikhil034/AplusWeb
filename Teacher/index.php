@@ -1,3 +1,4 @@
+
 <?php
 
 session_start();
@@ -63,7 +64,7 @@ a
 
     <title>Teacher Dashboard</title>
   </head>
-  <body id="body" onload="preloader()">
+  <body id="body" onload="setTimeout('preloader()', 100);">
     <div id="loading">
     </div>
     <div class="container">
@@ -226,31 +227,7 @@ a
                
               </div>
             </div>
-           <!--  <div class="charts__right">
-              <div class="charts__right__title">
-                <div>
-                  <h1>Your Profile And Lecture Details</h1>
-                  
-                </div>
-                
-              </div>
-
-              <div class="charts__right__cards">
-                <a href="TeacherProfile.php"><div class="card4">
-                  <h2>Profile Here</h2>
-                </div>
-              </a>
-
-              <a href="LectureShow.php"><div class="card3">
-                  <h2>Lecture Here</h2>
-                </div>
-              </a>
-
-            </div>
-          </div>
- -->
-
-          <!-- CHARTS ENDS HERE -->
+        
         </div>
       </main>
 
@@ -319,8 +296,14 @@ a
       var pre=document.getElementById('loading');
       function preloader() {
         pre.style.display='none';
-       // $('#preloader').delay(3000).fadeOut();
+       
       }
+
+    //    <script>
+    // setTimeout(function(){
+    //   //deferred onload
+    // }, 2000);
+  </script>
     </script>
   </body>
 </html>
@@ -330,8 +313,8 @@ a
 
 else
 {
-  echo "Plese Login Page";
-  header("location:TeacherLogin.php")
+
+  header("location:TeacherLogin.php");
 ?>
 
 
@@ -339,7 +322,4 @@ else
 <?php
 }
 ?> 
-
-
-
 

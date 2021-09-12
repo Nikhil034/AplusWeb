@@ -13,7 +13,7 @@ if(isset($_SESSION['eml']))
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Attendance</title>
+	<title>Student Attendance</title>
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -52,7 +52,7 @@ if(isset($_SESSION['eml']))
 							<td><?php echo $show['RollNo']; ?></td>
 							<td><?php echo $show['Name']; ?></td>
 							<td>
-								P <input required type="radio" name="at[<?php echo $show['RollNo']; ?>]" value="Present">
+								P <input required type="radio" name="at[<?php echo $show['RollNo']; ?>]" value="Present" checked>
 								A <input required type="radio" name="at[<?php echo $show['RollNo']; ?>]" value="Absent">
 							</td>
 						</tr>
@@ -127,12 +127,12 @@ if(isset($_SESSION['eml']))
 
 else
 {
-  echo "Plese Login Page";
+ header("location:TeacherLogin.php");
 ?>
 
 
 
- <a href="TeacherLogin.php" >Login First</a>
+ 
 <?php
 }
 ?> 

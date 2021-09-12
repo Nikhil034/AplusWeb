@@ -1,4 +1,4 @@
-<?php
+  <?php
 
 session_start();
 
@@ -111,12 +111,12 @@ $col=mysqli_fetch_array($s);
 
 else
 {
-  echo "Plese Login Page";
+   header("location:TeacherLogin.php");
 ?>
 
 
 
- <a href="TeacherLogin.php" >Login First</a>
+ 
 <?php
 }
 ?> 

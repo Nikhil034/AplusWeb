@@ -188,7 +188,3 @@ $(document).ready(function()
 <?php
  }
  ?>
-
-
-
-

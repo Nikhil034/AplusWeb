@@ -67,7 +67,8 @@ if(isset($_SESSION['eml']))
    &nbsp
  
 
-   <input type="submit" class="btn btn-warning" value="View Work" name="view" formaction="NineHomeWorkView.php">
+
+   <a href="NineHomeWorkView.php" class="btn btn-info">View Work</a>
 
   
 

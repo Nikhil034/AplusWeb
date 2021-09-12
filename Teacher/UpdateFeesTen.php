@@ -114,7 +114,7 @@ if(isset($_POST['fupdate']))
 
 else
 {
-  echo "Plese Login Page";
+  header("location:TeacherLogin.php");
 ?>
 
 

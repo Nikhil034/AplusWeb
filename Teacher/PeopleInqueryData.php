@@ -95,7 +95,7 @@ $s=mysqli_query($con,"select * from inquerypeople");
   </div>
   <div class="card-footer">
       
-         <input type="submit" class="btn btn-warning" value="Back Home" formaction="index.php "  >
+         <input type="submit" class="btn btn-warning" value="Back Home" formaction="index.php "   >
          &nbsp &nbsp<a href="NewInqueryAdd.php" class="btn btn-primary">ADD</a>
     </div>
 </div>
