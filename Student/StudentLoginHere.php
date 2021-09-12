@@ -130,6 +130,9 @@ if(isset($_POST['stlogin']))
  $em=$_POST['emg'];
  $ps=$_POST['psw'];
 
+ $emlst=mysqli_real_escape_string($em); //it used to remove all special character from input string
+ $psst=mysqli_real_escape_string($ps);
+
 
 
   $isValid = filter_var($em, FILTER_VALIDATE_EMAIL);
@@ -145,11 +148,11 @@ if(isset($_POST['stlogin']))
 
  $query = mysqli_query($con,"SELECT Email,Password
     FROM studentninedata
-    WHERE Email='$em' AND Password='$ps' 
+    WHERE Email='$emlst' AND Password='$psst' 
     UNION 
     SELECT Email,Password
     FROM studentendata 
-    WHERE Email='$em' AND Password='$ps'");
+    WHERE Email='$emlst' AND Password='$psst'");
 
  
 
@@ -160,7 +163,7 @@ if(isset($_POST['stlogin']))
      {
 
      
-     echo $_SESSION['emg']=$em;
+     echo $_SESSION['emg']=$eml;
       
      header("location:http://localhost/AplusWeb/Student/");
      }

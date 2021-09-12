@@ -59,7 +59,7 @@ $qu2=mysqli_query($con,"select * from studentendata where Email='$Mail'");
     <link rel="stylesheet" href="styles.css" />
     <title>Student Dashboard</title>
   </head>
-  <body id="body" onload="preloader()">
+  <body id="body" onload="setTimeout('preloader()',100);">
     <div id="loading">
     </div>
     <div class="container">
