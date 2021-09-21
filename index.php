@@ -266,7 +266,7 @@
               <h4 class="modal-title">Login As Account</h4>
               <br>
 
-               <a href="http://localhost/AplusWeb/Student/StudentLoginHere.php"  class="btn btn-primary btn-block btn-lg">Student</a>
+               <a href="http://localhost/AplusWeb/Student/StudentLoginHere.php"  class="btn btn-primary btn-block btn-lg">Students</a>
 
               <br>
 
