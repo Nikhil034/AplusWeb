@@ -76,6 +76,10 @@ if(isset($_POST['sb']))
   $Re=$_POST['rea'];
   $Dt=$_POST['dat'];
 
+  // echo "<pre>";
+  // print_r($_POST);
+  // die();
+
   $q=mysqli_query($con,"insert into leavedata(Name,Mail,Title,Reason,Date)values('$Nam','$M','$Tit','$Re','$Dt')");
 
    if($q)

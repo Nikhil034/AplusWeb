@@ -130,8 +130,8 @@ if(isset($_POST['stlogin']))
  $em=$_POST['emg'];
  $ps=$_POST['psw'];
 
- $emlst=mysqli_real_escape_string($em); //it used to remove all special character from input string
- $psst=mysqli_real_escape_string($ps);
+ $emlst=mysqli_real_escape_string($con,$em); //it used to remove all special character from input string
+ $psst=mysqli_real_escape_string($con,$ps);
 
 
 
@@ -163,7 +163,7 @@ if(isset($_POST['stlogin']))
      {
 
      
-     echo $_SESSION['emg']=$eml;
+     echo $_SESSION['emg']=$emlst;
       
      header("location:http://localhost/AplusWeb/Student/");
      }
