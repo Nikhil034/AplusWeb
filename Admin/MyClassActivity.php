@@ -49,7 +49,7 @@ $Status2=mysqli_query($con,"select * from outtimeteacher where Sdate='$dt'");
   <div class="card">
     <div class="card-header">
     	 Show Class Lecture Schedule
-        <a href="index.php" class="btn btn-warning" style="float: right;">Home</a>
+        <a href="index.php" class="btn btn-warning" style="float: right;">Hdsfsdfds</a>
     </div>
     <div class="card-body">
 
