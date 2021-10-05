@@ -11,7 +11,7 @@ if(isset($_SESSION['ema']))
 
 <?php
 
-$s=mysqli_query($con,"select * from studentninedata");
+$s=mysqli_query($con,"select * from studentninedata isDeleted=0");
 
 ?>
 

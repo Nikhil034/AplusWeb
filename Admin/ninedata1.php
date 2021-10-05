@@ -1,3 +1,4 @@
+
 <?php
 
 session_start();
@@ -121,10 +122,13 @@ $(document).ready(function()
 
    
 
-    $transfer=mysqli_query($con,"insert into testingtb(Rollno,Name,Email,Password,Phoneno,Standard,Sex,Address)select RollNo,Name,Email,Password,Phone,Standard,Sex,Address from studentninedata");
+    $transfer=mysqli_query($con,"insert into studentendata(Rollno,Name,Email,Password,Phone,Standard,Sex,Address)select RollNo,Name,Email,Password,Phone,Standard,Sex,Address from studentninedata");
 
-    $up=mysqli_query($con,"UPDATE testingtb SET Standard = '10'");
-    $st=mysqli_query($con,"UPDATE testingtb SET Status='1'");
+
+
+    $up=mysqli_query($con,"UPDATE studentendata SET Standard = '10'");
+    $st=mysqli_query($con,"UPDATE studentendata SET Status='1'");
+    $id=mysqli_query($con,"UPDATE studentendata SET isDeleted=1");
 
     if($transfer)
 {

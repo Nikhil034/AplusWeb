@@ -49,6 +49,7 @@ $Status2=mysqli_query($con,"select * from outtimeteacher where Sdate='$dt'");
   <div class="card">
     <div class="card-header">
     	 Show Class Lecture Schedule
+        <a href="index.php" class="btn btn-warning" style="float: right;">Home</a>
     </div>
     <div class="card-body">
 
@@ -134,7 +135,7 @@ $Status2=mysqli_query($con,"select * from outtimeteacher where Sdate='$dt'");
 <br>
   <br>
   <div class="card">
-    <div class="card-header">Show Teacher And Student Leave Data </div>
+    <div class="card-header">Show Teacher Leave Application </div>
     <div class="card-body">
 
       <table class="table table-hover">

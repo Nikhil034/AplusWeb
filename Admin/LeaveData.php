@@ -52,7 +52,7 @@ $col=mysqli_fetch_array($s);
       <form method="post">
       <tr>
         <th>NO</th>
-        <td><input type="text" name="nid" value="<?php echo $col[0];?>"></td>
+        <td><input type="text" name="nid" value="<?php echo $col[0];?>" readonly></td>
       </tr>  
          <tr>
         <th>NAME</th>
@@ -135,6 +135,8 @@ else
     <a href="LeaveDelete.php?i=<?php echo $col['id'];?>"><button type="button" class="btn btn-danger btn-lg btn-block responsive-width">
        REMOVE
     </button>
+
+    <a href="index.php" class="btn btn-warning">Home</a>
 
   
 

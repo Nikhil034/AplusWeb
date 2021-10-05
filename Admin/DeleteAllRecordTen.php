@@ -22,7 +22,7 @@ if(isset($_SESSION['ema']))
 
 	if ($r)
 	{
-		$d = mysqli_query($con,"truncate table studentendata`") or die(mysqli_error());
+		$d=mysqli_query($con,"update studentendata set isDeleted='1'");
 			
 		if($d)
 		{

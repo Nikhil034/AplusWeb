@@ -14,7 +14,7 @@ if(isset($_SESSION['ema']))
 
 require("fpdf183/fpdf.php");
 
-$res=mysqli_query($con,"select distinct Rollno,Name,Sex,Phone from studentendata");
+$res=mysqli_query($con,"select distinct Rollno,Name,Sex,Phone from studentendata where isDeleted=0");
 
 
 

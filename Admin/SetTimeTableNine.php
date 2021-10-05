@@ -18,7 +18,7 @@ if(isset($_SESSION['ema']))
 
 
 
-$s=mysqli_query($con,"select * from timetablenine");
+$s=mysqli_query($con,"select * from timetablenine where isSeted=0");
 
 
 

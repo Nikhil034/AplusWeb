@@ -14,8 +14,11 @@ if(isset($_SESSION['ema']))
 <?php
 
 
+$id=$_GET['i'];
 
-$s=mysqli_query($con,"select * from resultten");
+$s=mysqli_query($con,"select Distinct Rollno,Name,Mark from resultten where Date_Ex='$id'");
+
+// $s=mysqli_query($con,"select * from resultten");
 
 
 

@@ -18,7 +18,7 @@ if(isset($_SESSION['ema']))
 
 
 
-$s=mysqli_query($con,"select * from timetableten");
+$s=mysqli_query($con,"select * from timetableten where isSeted=0");
 
 
 
@@ -118,7 +118,7 @@ $s=mysqli_query($con,"select * from timetableten");
 
 
         
-         <input type="submit" class="btn btn-info" value="Set Exam" formaction="NewTimeTablecreateTen.php">
+         <input type="submit" class="btn btn-info" value="Set Exam" formaction="">
           <a href="ExamResultManage.php" class="btn btn-danger">Exit</a>
     </div>
   </div>

@@ -20,12 +20,14 @@ if(isset($_SESSION['ema']))
 	$r = mysqli_fetch_row($q);
 
 	if ($r)
+
 	{
-		$d = mysqli_query($con,"truncate table testingtb ");
+		$d=mysqli_query($con,"update studentninedata set isDeleted='1'");
+		// $d = mysqli_query($con,"truncate table testingtb ");
 
-		$f=mysqli_query($con,"truncate table ");
+		// $f=mysqli_query($con,"truncate table ");
 
-		$atten=mysqli_query($con,"truncate table ");
+		// $atten=mysqli_query($con,"truncate table ");
 			
 		if($d)
 		{

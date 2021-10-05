@@ -17,7 +17,7 @@ if(isset($_SESSION['ema']))
 
 $id=$_GET['i'];
 
-$s=mysqli_query($con,"select distinct RollNo,Name from studentendata");
+$s=mysqli_query($con,"select distinct RollNo,Name from studentendata where isDeleted=0");
 $q=mysqli_query($con,"select Subject,Marks,Date from timetableten where Sno=$id");
 
 
@@ -42,7 +42,7 @@ $col=mysqli_fetch_array($q);
    <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-    <li class="breadcrumb-item"><a href="SetTimeTableNine.php">Time Table</a></li>
+    <li class="breadcrumb-item"><a href="SetTimeTableTen.php">Time Table</a></li>
     <li class="breadcrumb-item active" aria-current="page">Set Result</li>
   </ol>
 </nav>
@@ -145,22 +145,11 @@ foreach ($mar as $key=> $value)
   $q = mysqli_query($con,"insert into resultten(Rollno,Name,Subject,Mark,Total,Date_Ex) values ('{$_POST['no'][$key]}','{$_POST['nm'][$key]}','$sb','$value','$tot','$dt')");
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 if($q)
 {
+    $resutltset=mysqli_query($con,"update timetableten set isSeted=1 where Subject='$id'");
    echo" <div class='alert alert-success'>
     <strong>Success!</strong> New Result Add Succesfull
   </div>";

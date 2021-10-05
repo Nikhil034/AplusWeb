@@ -94,7 +94,7 @@ if(isset($_SESSION['ema']))
 							$date=$_GET['Date'];
 						
 						$q = mysqli_query($con,"select studentendata.*,attendanceten.*
-							from attendanceten inner join studentendata on attendanceten.RollNo=studentendata.Rollno and attendanceten.Date='$date'");
+							from attendanceten inner join studentendata on attendanceten.RollNo=studentendata.Rollno and attendanceten.Date='$date' isDeleted=0");
 						if($q->num_rows>0)
 						{
 							$i=0;
@@ -105,6 +105,8 @@ if(isset($_SESSION['ema']))
 						
 						
 					?>
+        
+      </form>
 
 					<tr>
 						<td><?php echo $val['RollNo']; ?></td>

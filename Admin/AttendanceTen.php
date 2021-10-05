@@ -50,7 +50,7 @@ if(isset($_SESSION['ema']))
 					</thead>
 					<tbody>
 						<?php
-							$q = mysqli_query($con,"select * from studentendata");
+							$q = mysqli_query($con,"select * from studentendata isDeleted=0");
 							while ($show = mysqli_fetch_assoc($q)){
 
 
