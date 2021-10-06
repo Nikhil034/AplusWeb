@@ -204,7 +204,7 @@ else
 
 </table>
 
-  s
+
     </div>
 </div>
 </div>

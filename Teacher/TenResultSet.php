@@ -15,7 +15,7 @@ if(isset($_SESSION['eml']))
 
 $id=$_GET['i'];
 
-$s=mysqli_query($con,"select distinct RollNo,Name from studentendata");
+$s=mysqli_query($con,"select distinct RollNo,Name from studentendata where isDeleted=0");
 $q=mysqli_query($con,"select Subject,Marks,Date from timetableten where Sno=$id");
 
 
@@ -135,22 +135,11 @@ foreach ($mar as $key=> $value)
   $q = mysqli_query($con,"insert into resultten(Rollno,Name,Subject,Mark,Total,Date_Ex) values ('{$_POST['no'][$key]}','{$_POST['nm'][$key]}','$sb','$value','$tot','$dt')");
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 if($q)
 {
+  $set=mysqli_query($con,"update timetableten set isSeted=1 where Sno='$id'");
    echo" <div class='alert alert-success'>
     <strong>Success!</strong> New Result Add Succesfull
   </div>";

@@ -17,7 +17,7 @@ if(isset($_SESSION['eml']))
 
 $id=$_GET['i'];
 
-$s=mysqli_query($con,"select distinct RollNo,Name from studentninedata");
+$s=mysqli_query($con,"select distinct RollNo,Name from studentninedata where isDeleted=0");
 $q=mysqli_query($con,"select Subject,Marks,Date from timetablenine where Sno=$id");
 
 
@@ -139,20 +139,10 @@ foreach ($mar as $key=> $value)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 }
 if($q)
 {
+  $set=mysqi_query($con,"update timetablenine set isSeted=1 where Sno='$id'");
    echo" <div class='alert alert-success'>
     <strong>Success!</strong> New Result Add Succesfull
   </div>";

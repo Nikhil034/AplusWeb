@@ -49,7 +49,7 @@ a
 <?php
 
 
-$s=mysqli_query($con,"select * from studentendata");
+$s=mysqli_query($con,"select * from studentendata where isDeleted=0");
 
 
 

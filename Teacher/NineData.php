@@ -47,7 +47,7 @@ a
 
 
 
-$s=mysqli_query($con,"select * from studentninedata");
+$s=mysqli_query($con,"select * from studentninedata where isDeleted=0");
 
 
 

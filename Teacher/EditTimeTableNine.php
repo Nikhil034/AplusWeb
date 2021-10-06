@@ -59,10 +59,10 @@ $col=mysqli_fetch_array($sq);
       <input class="form-control" type="text" placeholder="Enter Updated Subject" name="sb" value="<?php echo $col[1];?>">
       <br>
 
-      <input class="form-control" type="date" placeholder="Enter Updated Date" name="dt" value="<?php echo $col[2];?>">
+      <input class="form-control" type="date" placeholder="Enter Updated Date" name="dt" value="<?php echo $col[3];?>">
       <br>
 
-      <input class="form-control" type="text" placeholder="Enter Updated Marks of Subject" name="mos" value="<?php echo $col[3];?>">
+      <input class="form-control" type="text" placeholder="Enter Updated Marks of Subject" name="mos" value="<?php echo $col[4];?>">
     </div> 
     </div> 
       

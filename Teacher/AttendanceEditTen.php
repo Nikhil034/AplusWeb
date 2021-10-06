@@ -58,10 +58,11 @@ if(isset($_SESSION['eml']))
     $rn=$_POST['sroll'];
     $st=$_POST['upstatus'];
 
-    $catch=$_POST;
-    //var_dump($catch);
+    // $catch=$_POST;
+    // var_dump($catch);
+    // die();
 
-    $updateStatus=mysqli_query($con,"update attendancenine set Value='$st' where RollNo='$rn'");
+    $updateStatus=mysqli_query($con,"update attendanceten set Value='$st' where RollNo='$rn'");
      if($updateStatus)
    {
     echo " <div class='alert alert-success'>

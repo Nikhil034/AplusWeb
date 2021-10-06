@@ -84,7 +84,7 @@ if(isset($_SESSION['eml']))
 							$date=$_GET['Date'];
 						
 						$q = mysqli_query($con,"select studentendata.*,attendanceten.*
-							from attendanceten inner join studentendata on attendanceten.RollNo=studentendata.Rollno and attendanceten.Date='$date'");
+							from attendanceten inner join studentendata on attendanceten.RollNo=studentendata.Rollno and attendanceten.Date='$date' where isDeleted=0");
 						if($q->num_rows>0)
 						{
 							$i=0;

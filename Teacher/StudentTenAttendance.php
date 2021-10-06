@@ -43,7 +43,7 @@ if(isset($_SESSION['eml']))
 					</thead>
 					<tbody>
 						<?php
-							$q = mysqli_query($con,"select * from studentendata");
+							$q = mysqli_query($con,"select * from studentendata where isDeleted=0");
 							while ($show = mysqli_fetch_assoc($q)){
 
 

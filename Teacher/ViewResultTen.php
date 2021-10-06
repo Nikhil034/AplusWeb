@@ -17,7 +17,7 @@ if(isset($_SESSION['eml']))
 
 $id=$_GET['i'];
 
-$s=mysqli_query($con,"select * from resultten where Date_Ex='$id'");
+$s=mysqli_query($con,"select distinct Rollno,Name,Mark from resultten where Date_Ex='$id'");
 
 
 
